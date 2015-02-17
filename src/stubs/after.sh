@@ -7,6 +7,6 @@ sudo service nginx stop
 sudo apt-get purge -y nginx
 sudo apt-get update -y
 sudo apt-get install -y apache2
-sudo apt-get install -y php5 libapache2-mod-php5
+sudo apt-get install -y libapache2-mod-php5
 sudo sed -i -e 's/var\/www\/html/var\/www/g' /etc/apache2/sites-enabled/000-default.conf
 sudo service apache2 restart
